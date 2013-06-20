@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
   def index
-    @students = Student.all
+    @students = Student.by_age
 
     respond_to do |format|
       format.html # index.html.erb

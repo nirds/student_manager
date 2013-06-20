@@ -7,5 +7,7 @@ class Student < ActiveRecord::Base
   validates_uniqueness_of :email
   validates_confirmation_of :email
 
+  scope :by_age, order(:age).reverse_order
+
   has_many :course
 end
