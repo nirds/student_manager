@@ -28,10 +28,6 @@ group :development do
   gem "pry", "~> 0.9.12.2"
 end
 
-gem :development, :staging do
-  gem "some_beta_gem"
-end
-
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
